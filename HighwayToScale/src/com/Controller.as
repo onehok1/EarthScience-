@@ -11,16 +11,14 @@ package com
 	{
 		protected var _screens:Array;
 		protected var _currentScreen:View;
-		
-		
-		public function Controller() 
-		{
+				
+		public function Controller() {
 			init();
 		}
 		
 		public function init():void {
 			createScreensArray();
-			stage.addEventListener(ViewEvent.LOAD_SCREEN, onLoadScreenHandler, false, 0, true);			
+			addEvents();
 		}
 		
 		protected function createScreensArray():void {
@@ -29,7 +27,7 @@ package com
 				if (child is View) {
 					(child as View).disable();
 					_screens.push(child);
-					_currentScreen = child;
+					_currentScreen = child as View;
 				}
 			}
 		}
@@ -43,7 +41,7 @@ package com
 			for (var i:uint = 0; i < this.numChildren; i++) {
 				if (this.getChildAt(i).name == e.targetView) {
 					(this.getChildAt(i) as View).enable();
-					_currentScreen = this.getChildAt(i);
+					_currentScreen = this.getChildAt(i) as View;
 				}
 			}
 		}
