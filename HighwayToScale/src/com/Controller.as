@@ -22,6 +22,8 @@ package com
 		}
 		
 		protected function createScreensArray():void {
+			_screens = new Array();
+			
 			for (var i:uint = 0; i < this.numChildren; i++) {
 				var child:DisplayObject = this.getChildAt(i);
 				if (child is View) {
