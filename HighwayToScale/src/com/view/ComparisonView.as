@@ -1,17 +1,16 @@
 package com.view 
 {
+	import com.controller.Controller;
 	import com.model.ComparisonItem;
 	import com.model.XMLParser;
 	import com.view.interactive.controls.NextButton;
+	import fl.controls.List;
+	import fl.data.DataProvider;
 	import flash.display.Loader;
 	import flash.display.MovieClip;
 	import flash.events.Event;
-	import com.events.XMLEvent;
-	import fl.controls.List;
-import fl.data.DataProvider;
-import flash.net.URLRequest;
-import flash.text.TextField;
-import com.controller.Controller;
+	import flash.net.URLRequest;
+	import flash.text.TextField;
 	/**
 	 * ...
 	 * @author Brandon Dockery
@@ -39,14 +38,23 @@ import com.controller.Controller;
 		}
 		
 		public override function disable():void {
-			if(_loader) _loader.contentLoaderInfo.removeEventListener(Event.CHANGE, onChangeListItemHandler, false);
+			disableLoader();
 			next_bttn_mc.disable();
 			if(image_preview_mc.numChildren > 0) image_preview_mc.removeChildAt(0);
 			item_panel.selectedItem = null;
+			clearTextFields();
+			super.disable();
+		}
+		
+		protected function disableLoader():void {
+			if (_loader) 
+				_loader.contentLoaderInfo.removeEventListener(Event.CHANGE, onChangeListItemHandler, false);
+		}
+		
+		protected function clearTextFields():void {
 			item_txt.text = "";
 			dimension_txt.text = "";
 			unit_txt.text = "";
-			super.disable();
 		}
 		
 		protected function initializeListPanel():void {
@@ -59,11 +67,15 @@ import com.controller.Controller;
 			item_panel.addEventListener(Event.CHANGE, onChangeListItemHandler, false, 0, true);
 		}
 		
-		protected function onChangeListItemHandler(e:Event):void {
-			
+		protected function setTextFields():void {
 			item_txt.text = item_panel.selectedItem.label;
 			dimension_txt.text = item_panel.selectedItem.compItem.dimension[0];
 			unit_txt.text = item_panel.selectedItem.compItem.unit;
+		}
+		
+		protected function onChangeListItemHandler(e:Event):void {
+			
+			setTextFields();
 			
 			while (image_preview_mc.numChildren > 0) {
 				image_preview_mc.removeChildAt(0);
