@@ -7,13 +7,14 @@ package com.model
 	public class ComparisonItem
 	{
 		private var _name:String = "";
-		private var _dimension:Number;
+		private var _dimension:Array;
 		private var _unit:String = "";
 		private var _location:String = "";
+		private var _format:String = "";
 		
 		
 		public function ComparisonItem() {
-			
+			_dimension = new Array();
 		}
 		
 		public function get name():String {
@@ -32,12 +33,12 @@ package com.model
 			return _unit;
 		}
 		
-		public function get dimension():Number {
+		public function get dimension():Array {
 			return _dimension;
 		}
 		
-		public function set dimension(newDimension:Number):void {
-			_dimension = newDimension;
+		public function set dimension(newDimensions:Array):void {
+			_dimension = newDimensions;
 		}
 		
 		public function set source(newSource:String):void {
@@ -46,6 +47,14 @@ package com.model
 		
 		public function get source():String {
 			return _location;
+		}
+		
+		public function get format():String {
+			return _format;
+		}
+		
+		public function set format(newFormat:String):void {
+			_format = newFormat;
 		}
 		
 		
