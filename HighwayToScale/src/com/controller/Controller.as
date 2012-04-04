@@ -1,5 +1,6 @@
 package com.controller
 {
+	import com.model.Comparison;
 	import flash.display.DisplayObject;
 	import flash.display.MovieClip;
 	import com.events.ViewEvent;
@@ -13,9 +14,11 @@ package com.controller
 	{
 		protected var _screens:Array;
 		protected var _currentScreen:View;
+		public static var comparisonDTO:Comparison;
 				
 		public function Controller() {
 			this.addEventListener(Event.ADDED_TO_STAGE, onAddedToStageHandler, false, 0, true);
+			comparisonDTO = new Comparison();
 		}
 		
 		protected function onAddedToStageHandler(e:Event) {

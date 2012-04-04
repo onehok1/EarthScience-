@@ -11,6 +11,7 @@ package com.view
 import fl.data.DataProvider;
 import flash.net.URLRequest;
 import flash.text.TextField;
+import com.controller.Controller;
 	/**
 	 * ...
 	 * @author Brandon Dockery
@@ -31,19 +32,31 @@ import flash.text.TextField;
 		}
 		
 		public override function enable():void {
-			super.enable();
+			super.enable();		
+			itemList = getComparisonObjects();			
+			initializeListPanel();
+			next_bttn_mc.disable();		
+		}
+		
+		public override function disable():void {
+			if(_loader) _loader.contentLoaderInfo.removeEventListener(Event.CHANGE, onChangeListItemHandler, false);
+			next_bttn_mc.disable();
+			if(image_preview_mc.numChildren > 0) image_preview_mc.removeChildAt(0);
+			item_panel.selectedItem = null;
+			item_txt.text = "";
+			dimension_txt.text = "";
+			unit_txt.text = "";
+			super.disable();
+		}
+		
+		protected function initializeListPanel():void {
 			var dp:DataProvider = new DataProvider();
-			itemList = getComparisonObjects();
-			
-			
 			for each(var item:ComparisonItem in itemList) {
 				dp.addItem( { label: item.name, compItem: item } );
 			}
 			item_panel.allowMultipleSelection = false;
 			item_panel.dataProvider = dp;
 			item_panel.addEventListener(Event.CHANGE, onChangeListItemHandler, false, 0, true);
-			
-			next_bttn_mc.disable();		
 		}
 		
 		protected function onChangeListItemHandler(e:Event):void {
@@ -60,7 +73,12 @@ import flash.text.TextField;
 			_loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onLoadImageCompleteHandler, false, 0, true);
 			_loader.load(new URLRequest(item_panel.selectedItem.compItem.source));
 			
-			
+			if (screenNum == 1) {
+				Controller.comparisonDTO.comparisonItemA = item_panel.selectedItem.compItem;
+			}
+			else {
+				Controller.comparisonDTO.comparisonItemB = item_panel.selectedItem.compItem;
+			}
 			next_bttn_mc.enable();
 
 		}
