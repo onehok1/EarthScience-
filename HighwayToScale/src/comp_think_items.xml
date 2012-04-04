@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <ComparisonItems>
 
-<ComparisonItem name="South American Plate" format="bitmap">
+<ComparisonItem name="South American Plate" format="bitmap" src="south_american_plate.png">
     <dimension unit="km2">4361700</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Somali Plate" format="bitmap">
+<ComparisonItem name="Somali Plate" format="bitmap" src="somali_plate.png">
     <dimension unit="km2">16667000</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Scotia Plate" format="bitmap">
+<ComparisonItem name="Scotia Plate" format="bitmap" src="scotia_plate.png">
     <dimension unit="km2">1651000</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Philippine Plate" format="bitmap">
+<ComparisonItem name="Philippine Plate" format="bitmap" src="phillipine_plate.png">
     <dimension unit="km2">5447000</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Pacific Plate" format="bitmap">
+<ComparisonItem name="Pacific Plate" format="bitmap" src="pacific_plate.png">
     <dimension unit="km2">103280000</dimension>
 </ComparisonItem>
 
