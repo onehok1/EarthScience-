@@ -12,10 +12,8 @@ package com.events
 		public var targetView:String;
 		
 		public function ViewEvent(targetView:String) {
-			super(LOAD_VIEW, false);
+			super(LOAD_VIEW, true);
 			this.targetView = targetView;
-		}
-		
+		}	
 	}
-
 }

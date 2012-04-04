@@ -1,8 +1,11 @@
-package com
+package com.controller
 {
+	import com.model.Comparison;
 	import flash.display.DisplayObject;
 	import flash.display.MovieClip;
 	import com.events.ViewEvent;
+	import com.view.View;
+	import flash.events.Event;
 	/**
 	 * ...
 	 * @author Brandon Dockery
@@ -11,14 +14,20 @@ package com
 	{
 		protected var _screens:Array;
 		protected var _currentScreen:View;
+		public static var comparisonDTO:Comparison;
 				
 		public function Controller() {
+			this.addEventListener(Event.ADDED_TO_STAGE, onAddedToStageHandler, false, 0, true);
+			comparisonDTO = new Comparison();
+		}
+		
+		protected function onAddedToStageHandler(e:Event) {
 			init();
 		}
 		
 		public function init():void {
-			createScreensArray();
 			addEvents();
+			createScreensArray();
 		}
 		
 		protected function createScreensArray():void {
@@ -29,9 +38,11 @@ package com
 				if (child is View) {
 					(child as View).disable();
 					_screens.push(child);
-					_currentScreen = child as View;
+					if(child.name == "Landing_View") _currentScreen = child as View;
 				}
 			}
+			_currentScreen.enable();
+			
 		}
 		
 		protected function addEvents():void {
@@ -46,8 +57,6 @@ package com
 					_currentScreen = this.getChildAt(i) as View;
 				}
 			}
-		}
-		
+		}	
 	}
-
 }

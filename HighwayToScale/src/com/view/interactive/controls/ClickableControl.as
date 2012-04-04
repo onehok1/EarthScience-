@@ -26,12 +26,14 @@ package com.view.interactive.controls
 			this.addEventListener(MouseEvent.MOUSE_DOWN, onMouseDownHandler, false, 0, true);
 			this.addEventListener(MouseEvent.MOUSE_OVER, onMouseOverHandler, false, 0, true);
 			this.addEventListener(MouseEvent.MOUSE_UP, onMouseUpHandler, false, 0, true);
+			this.addEventListener(MouseEvent.MOUSE_OUT, onMouseOutHandler, false, 0, true);
 		}
 		
 		protected function removeMouseListeners():void {
 			this.removeEventListener(MouseEvent.MOUSE_DOWN, onMouseDownHandler, false);
 			this.removeEventListener(MouseEvent.MOUSE_OVER, onMouseOverHandler, false);
 			this.removeEventListener(MouseEvent.MOUSE_UP, onMouseUpHandler, false);
+			this.removeEventListener(MouseEvent.MOUSE_OUT, onMouseOutHandler, false);
 		}
 		
 		protected function onMouseOverHandler(e:MouseEvent):void {
@@ -43,6 +45,10 @@ package com.view.interactive.controls
 		}
 		
 		protected function onMouseUpHandler(e:MouseEvent):void {
+			gotoInactiveState();
+		}
+		
+		protected function onMouseOutHandler(e:MouseEvent):void {
 			gotoInactiveState();
 		}
 		
