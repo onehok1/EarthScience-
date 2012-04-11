@@ -71,8 +71,8 @@
 </ComparisonItem>
 
 <ComparisonItem name="Microwave" format="bitmap" src="Pngs/Microwave.png">
-    <dimension unit="in">19</dimension>
-    <dimension unit="in">10</dimension>
+    <dimension unit="inches">19</dimension>
+    <dimension unit="inches">10</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Earth Area" format="bitmap" src="Pngs/Earth_Flat.png">
@@ -84,8 +84,8 @@
 </ComparisonItem>
 
 <ComparisonItem name="Notebook" format="bitmap" src="Pngs/85by11.png">
-    <dimension unit="in">8.5</dimension>
-    <dimension unit="in">11</dimension>
+    <dimension unit="inches">8.5</dimension>
+    <dimension unit="inches">11</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Canada" format="bitmap" src="Pngs/Canada.png">
@@ -99,13 +99,13 @@
 </ComparisonItem>
 
 <ComparisonItem name="Remote Controller" format="bitmap" src="Pngs/ps3Controller.png">
-    <dimension unit="in">8.5</dimension>
-    <dimension unit="in">2.25</dimension>
+    <dimension unit="inches">8.5</dimension>
+    <dimension unit="inches">2.25</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Playstation 3" format="bitmap" src="Pngs/playstation3.png">
-    <dimension unit="in">12.75</dimension>
-    <dimension unit="in">10.79</dimension>
+    <dimension unit="inches">12.75</dimension>
+    <dimension unit="inches">10.79</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="xBox 360" format="bitmap" src="Pngs/microsoft xbox.png">
