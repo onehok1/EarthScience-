@@ -42,6 +42,8 @@ package com.view
 		}
 		
 		protected function setComparisonText():void {
+			Controller.comparisonDTO.convertItemsDimensions();
+			trace(Controller.comparisonDTO.getLargerItem().dimension[0]);
 			bigger_item_txt.text = Controller.comparisonDTO.getLargerItem().name;
 			smaller_item_txt.text = Controller.comparisonDTO.getSmallerItem().name;
 			ratio_txt.text = Controller.comparisonDTO.getRoundedRatio().toString();
