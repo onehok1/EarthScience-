@@ -2,115 +2,115 @@
 <ComparisonItems>
 
 <ComparisonItem name="South American Plate" format="bitmap" src="Pngs/south_american_plate.png">
-    <dimension unit="km2">4361700</dimension>
+    <dimension name="area" dimension="2" unit="km2">4361700</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Somali Plate" format="bitmap" src="Pngs/somali_plate.png">
-    <dimension unit="km2">16667000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">16667000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Scotia Plate" format="bitmap" src="Pngs/scotia_plate.png">
-    <dimension unit="km2">1651000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">1651000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Philippine Plate" format="bitmap" src="Pngs/phillipine_plate.png">
-    <dimension unit="km2">5447000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">5447000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Pacific Plate" format="bitmap" src="Pngs/pacific_plate.png">
-    <dimension unit="km2">103280000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">103280000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="North American Plate" format="bitmap" src="Pngs/north_american_plate.png">
-    <dimension unit="km2">75888000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">75888000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Nazca Plate" format="bitmap" src="Pngs/nazca_plate.png">
-    <dimension unit="km2">15630000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">15630000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Juan de Fuca Plate" format="bitmap" src="Pngs/juan_de_fuca_plate.png">
-    <dimension unit="km2">252000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">252000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Indian Plate" format="bitmap" src="Pngs/indian_plate.png">
-    <dimension unit="km2">11920000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">11920000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Eurasian Plate" format="bitmap" src="Pngs/eurasian_plate.png">
-    <dimension unit="km2">67811000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">67811000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Cocos Plate" format="bitmap" src="Pngs/cocos_plate.png">
-    <dimension unit="km2">2860000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">2860000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Caribbean Plate" format="bitmap" src="Pngs/carribean_plate.png">
-    <dimension unit="km2">3319000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">3319000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Australian Plate" format="bitmap" src="Pngs/australian_plate.png">
-    <dimension unit="km2">47152000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">47152000</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Arabian Plate" format="bitmap" src="Pngs/arabian_plate.png">
-    <dimension unit="km2">5010900</dimension>
+<ComparisonItem  name="Arabian Plate" format="bitmap" src="Pngs/arabian_plate.png">
+    <dimension name="area" dimensions="2" unit="km2">5010900</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Antarctic Plate" format="bitmap" src="Pngs/antarctic_plate.png">
-    <dimension unit="km2">60916000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">60916000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="African Plate" format="bitmap" src="Pngs/african_plate.png">
-    <dimension unit="km2">61334000</dimension>
+    <dimension name="area" dimensions="2" unit="km2">61334000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Classroom" format="bitmap">
-    <dimension unit="ft">32</dimension>
-    <dimension unit="ft">25</dimension>
+    <dimension name="width" dimensions="1" unit="ft">32</dimension>
+    <dimension name="height" dimensions="1" unit="ft">25</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Microwave" format="bitmap" src="Pngs/Microwave.png">
-    <dimension unit="in">19</dimension>
-    <dimension unit="in">10</dimension>
+    <dimension name="width" dimensions="1" unit="inches">19</dimension>
+    <dimension name="height" dimensions="1" unit="inches">10</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Earth Area" format="bitmap" src="Pngs/Earth_Flat.png">
-    <dimension unit="miles2">197000000</dimension>
+    <dimension name="area" dimensions="2" unit="miles2">197000000</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Earth Circumference" format="bitmap" src="Pngs/Earth_Sphere.png">
-    <dimension unit="miles">24901.55</dimension>
+    <dimension name="length" dimensions="1" unit="miles">24901.55</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Notebook" format="bitmap" src="Pngs/85by11.png">
-    <dimension unit="in">8.5</dimension>
-    <dimension unit="in">11</dimension>
+    <dimension name="width" dimensions="1" unit="inches">8.5</dimension>
+    <dimension name="height" dimensions="1" unit="inches">11</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Canada" format="bitmap" src="Pngs/Canada.png">
-    <dimension unit="miles">3402</dimension>
-    <dimension unit="miles">2897</dimension>
+    <dimension name="width" dimensions="1" unit="miles">3402</dimension>
+    <dimension name="height" dimensions="1" unit="miles">2897</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="United States" format="bitmap">
-    <dimension unit="miles">2680</dimension>
-    <dimension unit="miles">1582</dimension>
+    <dimension name="width" dimensions="1" unit="miles">2680</dimension>
+    <dimension name="height" dimensions="1" unit="miles">1582</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Remote Controller" format="bitmap" src="Pngs/ps3Controller.png">
-    <dimension unit="in">8.5</dimension>
-    <dimension unit="in">2.25</dimension>
+    <dimension name="height" dimensions="1" unit="inches">8.5</dimension>
+    <dimension name="width" dimensions="1" unit="inches">2.25</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Playstation 3" format="bitmap" src="Pngs/playstation3.png">
-    <dimension unit="in">12.75</dimension>
-    <dimension unit="in">10.79</dimension>
+    <dimension unit="inches">12.75</dimension>
+    <dimension unit="inches">10.79</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="xBox 360" format="bitmap" src="Pngs/microsoft xbox.png">
-    <dimension unit="in">12.5</dimension>
-    <dimension unit="in">10.15</dimension>
+    <dimension unit="inches">12.5</dimension>
+    <dimension unit="inches">10.15</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="James River" format="bitmap">
@@ -151,21 +151,21 @@
 </ComparisonItem>
 
 <ComparisonItem name="Paperclip" format="bitmap" src="Pngs/paperclip.png">
-    <dimension unit="in">1.5</dimension>
+    <dimension unit="inches">1.5</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="TV" format="bitmap" src="Pngs/samsung32.png">
-    <dimension unit="in">30.5</dimension>
-    <dimension unit="in">21</dimension>
+    <dimension unit="inches">30.5</dimension>
+    <dimension unit="inches">21</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Laptop" format="bitmap" src="Pngs/macbookpro.png">
-    <dimension unit="in">14.6</dimension>
-    <dimension unit="in">9.6</dimension>
+    <dimension unit="inches">14.6</dimension>
+    <dimension unit="inches">9.6</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="iPhone" format="bitmap" src="Pngs/iphone4s.png">
-    <dimension unit="in">4.5</dimension>
-    <dimension unit="in">2.25</dimension>
+    <dimension unit="inches">4.5</dimension>
+    <dimension unit="inches">2.25</dimension>
 </ComparisonItem>
 </ComparisonItems>

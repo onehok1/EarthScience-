@@ -1,0 +1,21 @@
+Meeting with Dr. Shaffer
+
+Starting with things of which they have no intuition is absolutely worthless. We need to start with things that they do have a grasp of, such as their height, and handheld objects.
+
+Our project might be too grandiose. One small lesson is what we should do.
+   - it should be a thing that they can relate to the size of. And then we should scale it up to what we want to get at.
+   - even getting up to the size of the Earth will be a lot of steps.
+   - start with a base unit we think they can understand.
+   - scale up, that should be more than enough in the context of a project like this
+   - do we care about the actual size, or the ratio of the sizes. They probably already have some sense of how big they are, but they've probably 	  never quantified it. We should worry about relationships and ratios.
+   - it would be great if we could use a similar step size each time logarithmically. e.g. the school is 1000x bigger than you, Blacksburg is 1000x bigger than a school
+   - People don' get logarithms, so this would be a potential way to teach that and connect it
+   - we don't even know if our students are covering this in their math class
+   - Pick a start object, pick an end object
+   - This might be guided, we may have to jettison the open-ended approach to this. Otherwise the point may be lost.
+   
+   One good point he brought up is that what may be throwing people off are the jumps in progression, and the lack of evenness in progression ratio
+   Scales shown on maps and charts are way off in order to get information across; students need to get a sense for the actual scale
+			- Jupiter is big, but how big
+			- The Sun is far, but in the same way that we are small compared to the Earth
+			- Jupiter is far, Venus is far; but how much further is one than the other
