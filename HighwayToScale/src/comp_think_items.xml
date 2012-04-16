@@ -15,13 +15,13 @@
 
 <ComparisonItem name="Philippine Plate" format="bitmap" src="Pngs/phillipine_plate.png">
     <dimension name="area" dimensions="2" unit="km2">5447000</dimension>
+</ComparisonItem>-->
+
+<ComparisonItem name="Pacific Plate" format="vector" src="PacificPlate">
+    <dimension name="area" unit="km2">103280000</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Pacific Plate" format="bitmap" src="Pngs/pacific_plate.png">
-    <dimension name="area" dimensions="2" unit="km2">103280000</dimension>
-</ComparisonItem>
-
-<ComparisonItem name="North American Plate" format="bitmap" src="Pngs/north_american_plate.png">
+<!--<ComparisonItem name="North American Plate" format="bitmap" src="Pngs/north_american_plate.png">
     <dimension name="area" dimensions="2" unit="km2">75888000</dimension>
 </ComparisonItem>
 
@@ -59,11 +59,11 @@
 
 <ComparisonItem name="Antarctic Plate" format="bitmap" src="Pngs/antarctic_plate.png">
     <dimension name="area" dimensions="2" unit="km2">60916000</dimension>
-</ComparisonItem>
-
-<ComparisonItem name="African Plate" format="bitmap" src="Pngs/african_plate.png">
-    <dimension name="area" dimensions="2" unit="km2">61334000</dimension>
 </ComparisonItem>-->
+
+<ComparisonItem name="African Plate" format="vector" src="AfricanPlate">
+    <dimension name="area" unit="km2">61334000</dimension>
+</ComparisonItem>
 
 <ComparisonItem name="Earth Area" format="vector" src="Earth_Round">
     <dimension name="area" unit="miles2">197000000</dimension>
@@ -75,25 +75,29 @@
 
 <ComparisonItem name="Canada" format="vector" src="Canada">
     <dimension name="width" unit="miles">3402</dimension>
+    <dimension name="length" unit="miles">3402</dimension>
     <dimension name="height" unit="miles">2897</dimension>
 </ComparisonItem>
 
-<!--<ComparisonItem name="United States" format="bitmap">
-    <dimension name="width" dimensions="1" unit="miles">2680</dimension>
-    <dimension name="height" dimensions="1" unit="miles">1582</dimension>
+<ComparisonItem name="United States" format="vector" src="USA">
+    <dimension name="width" unit="miles">2680</dimension>
+    <dimension name="length" unit="miles">2680</dimension>
+    <dimension name="height" unit="miles">1582</dimension>
 </ComparisonItem>-->
 
-<ComparisonItem name="Virginia" format="bitmap">
+<ComparisonItem name="Virginia" format="vector" src="Virginia">
     <dimension name="width" unit="miles">430</dimension>
+    <dimension name="length" unit="miles">430</dimension>
     <dimension name="height" unit="miles">200</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Chesapeake Bay" format="bitmap">
+<ComparisonItem name="Chesapeake Bay" format="vector" src="ChesapeakeBay">
     <dimension name="height" unit="miles">195</dimension>
+    <dimension name="length" unit="miles">195</dimension>
     <dimension name="width" unit="miles">30</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="James River" format="bitmap">
+<ComparisonItem name="James River" format="vector" src="JamesRiver">
     <dimension name="length" unit="miles">348</dimension>
 </ComparisonItem>
 
@@ -102,7 +106,7 @@
     <dimension name="height" unit="miles">5.85</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Richmond" format="bitmap">
+<ComparisonItem name="Richmond" format="vector" src="Richmond">
     <dimension name="width" unit="miles">4.22</dimension>
     <dimension name="height" unit="miles">2.275</dimension>
 </ComparisonItem>
@@ -113,7 +117,7 @@
 	<dimension name="area" unit="ft2">67600</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Classroom" format="bitmap">
+<ComparisonItem name="Classroom" format="vector" src="Classroom">
     <dimension name="width" unit="ft">32</dimension>
     <dimension name="height" unit="ft">25</dimension>
 	<dimension name="area" unit="ft2">800</dimension>
@@ -121,23 +125,27 @@
 
 <ComparisonItem name="Tractor Trailer" format="vector" src="TractorTrailer">
     <dimension name="length" unit="ft">68</dimension>
+    <dimension name="width" unit="ft">68</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Car" format="vector" src="Car">
     <dimension name="length" unit="ft">13.5</dimension>
+    <dimension name="width" unit="ft">13.5</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="8th grade girl" format="vector" src="Woman">
     <dimension name="height" unit="inches">61.5</dimension>
+    <dimension name="length" unit="inches">61.5</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="8th grade boy" format="vector" src="Man">
     <dimension name="height" unit="inches">60</dimension>
+    <dimension name="length" unit="inches">60</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="TV" format="vector" src="TV">
-    <dimension name="height" unit="inches">30.5</dimension>
-    <dimension name="width" unit="inches">21</dimension>
+    <dimension name="width" unit="inches">30.5</dimension>
+    <dimension name="height" unit="inches">21</dimension>
 	<dimension name="area" unit="inches2">640.5</dimension>
 </ComparisonItem>
 
@@ -159,7 +167,7 @@
 	<dimension name="area" unit="area">137.57</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="xBox 360" format="bitmap" src="Pngs/microsoft xbox.png">
+<ComparisonItem name="xBox 360" format="vector" src="Xbox360">
     <dimension name="width" unit="inches">12.5</dimension>
     <dimension name="height" unit="inches">10.15</dimension>
 	<dimension name="area" unit="inches2">126.87</dimension>
@@ -173,12 +181,14 @@
 
 <ComparisonItem name="Remote Controller" format="vector" src="controller">
     <dimension name="height" unit="inches">8.5</dimension>
+    <dimension name="length" unit="inches">8.5</dimension>
     <dimension name="width" unit="inches">2.25</dimension>
 	<dimension name="area" unit="inches2">19.125</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="iPhone" format="vector" src="iPhone">
     <dimension name="height" unit="inches">4.5</dimension>
+    <dimension name="length" unit="inches">4.5</dimension>
     <dimension name="width" unit="inches">2.25</dimension>
 	<dimension name="area" unit="inches2">10.125</dimension>
 </ComparisonItem>

@@ -57,7 +57,7 @@ package com.view
 				case "height":
 					dimension_txt.text = "tall";
 					break;
-				case "long":
+				case "length":
 					dimension_txt.text = "long";
 					break;
 				default:
@@ -123,7 +123,7 @@ package com.view
 					image_smaller_mc.getChildAt(0).height = image_larger_mc.getChildAt(0).height / Controller.comparisonDTO.getRoundedRatio();
 					image_smaller_mc.getChildAt(0).scaleX = image_smaller_mc.getChildAt(0).scaleY;
 					break;
-				case "long":
+				case "length":
 					image_smaller_mc.getChildAt(0).width = image_larger_mc.getChildAt(0).width / Controller.comparisonDTO.getRoundedRatio();
 					image_smaller_mc.getChildAt(0).scaleY = image_smaller_mc.getChildAt(0).scaleX;
 					break;

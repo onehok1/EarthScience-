@@ -69,6 +69,13 @@ package com.model
 			else return _comparisonItemB;
 		}
 		
+		public function convertItemsDimensions():void {
+			var targetUnit:String = getSmallerUnit();
+			
+			convertItem(targetUnit, _comparisonItemA);
+			convertItem(targetUnit, _comparisonItemB);
+		}
+		
 		protected function itemAIsGreater():Boolean {
 			return _comparisonItemA.dimension[comparisonDimension] >= _comparisonItemB.dimension[comparisonDimension];
 		}
@@ -167,13 +174,6 @@ package com.model
 					break;
 			}
 			
-		}
-		
-		public function convertItemsDimensions():void {
-			var targetUnit:String = getSmallerUnit();
-			
-			convertItem(targetUnit, _comparisonItemA);
-			convertItem(targetUnit, _comparisonItemB);
 		}
 		
 		private function convertItem(targetUnit:String, comparisonItem:ComparisonItem):void {
