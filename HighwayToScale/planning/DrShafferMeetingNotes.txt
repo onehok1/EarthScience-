@@ -19,3 +19,12 @@ Our project might be too grandiose. One small lesson is what we should do.
 			- Jupiter is big, but how big
 			- The Sun is far, but in the same way that we are small compared to the Earth
 			- Jupiter is far, Venus is far; but how much further is one than the other
+			
+	Size may be a good place to start, rather than linear.
+	Toss the tectonic plates -> Nobody really cares how big a tectonic plate is. That's a different project and shouldn't be brought into a general discussion of scale.
+	
+	What can we do in 3 weeks that a teacher can do in an hour? What Lauren described seemed a lot bigger than what a teacher can do in an hour.
+	
+	There's nothing intrinsically wrong with the idea of allowing kids to upload images to compare relative scales. However, it would need to be guided. We should give them suggestions or module questions and have them find an image and dimensions to input, and have them find the relative size of the two.
+	
+	We'll schedule another meeting sometime in the future after the next iteration.

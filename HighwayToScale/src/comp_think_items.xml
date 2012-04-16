@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ComparisonItems>
 
-<ComparisonItem name="South American Plate" format="bitmap" src="Pngs/south_american_plate.png">
+<!--<ComparisonItem name="South American Plate" format="bitmap" src="Pngs/south_american_plate.png">
     <dimension name="area" dimension="2" unit="km2">4361700</dimension>
 </ComparisonItem>
 
@@ -63,109 +63,128 @@
 
 <ComparisonItem name="African Plate" format="bitmap" src="Pngs/african_plate.png">
     <dimension name="area" dimensions="2" unit="km2">61334000</dimension>
+</ComparisonItem>-->
+
+<ComparisonItem name="Earth Area" format="vector" src="Earth_Round">
+    <dimension name="area" unit="miles2">197000000</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Classroom" format="bitmap">
-    <dimension name="width" dimensions="1" unit="ft">32</dimension>
-    <dimension name="height" dimensions="1" unit="ft">25</dimension>
+<ComparisonItem name="Earth Circumference" format="vector" src="Earth_Flat">
+    <dimension name="length" unit="miles">24901.55</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Microwave" format="bitmap" src="Pngs/Microwave.png">
-    <dimension name="width" dimensions="1" unit="inches">19</dimension>
-    <dimension name="height" dimensions="1" unit="inches">10</dimension>
+<ComparisonItem name="Canada" format="vector" src="Canada">
+    <dimension name="width" unit="miles">3402</dimension>
+    <dimension name="height" unit="miles">2897</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Earth Area" format="bitmap" src="Pngs/Earth_Flat.png">
-    <dimension name="area" dimensions="2" unit="miles2">197000000</dimension>
-</ComparisonItem>
-
-<ComparisonItem name="Earth Circumference" format="bitmap" src="Pngs/Earth_Sphere.png">
-    <dimension name="length" dimensions="1" unit="miles">24901.55</dimension>
-</ComparisonItem>
-
-<ComparisonItem name="Notebook" format="bitmap" src="Pngs/85by11.png">
-    <dimension name="width" dimensions="1" unit="inches">8.5</dimension>
-    <dimension name="height" dimensions="1" unit="inches">11</dimension>
-</ComparisonItem>
-
-<ComparisonItem name="Canada" format="bitmap" src="Pngs/Canada.png">
-    <dimension name="width" dimensions="1" unit="miles">3402</dimension>
-    <dimension name="height" dimensions="1" unit="miles">2897</dimension>
-</ComparisonItem>
-
-<ComparisonItem name="United States" format="bitmap">
+<!--<ComparisonItem name="United States" format="bitmap">
     <dimension name="width" dimensions="1" unit="miles">2680</dimension>
     <dimension name="height" dimensions="1" unit="miles">1582</dimension>
-</ComparisonItem>
+</ComparisonItem>-->
 
-<ComparisonItem name="Remote Controller" format="bitmap" src="Pngs/ps3Controller.png">
-    <dimension name="height" dimensions="1" unit="inches">8.5</dimension>
-    <dimension name="width" dimensions="1" unit="inches">2.25</dimension>
-</ComparisonItem>
-
-<ComparisonItem name="Playstation 3" format="bitmap" src="Pngs/playstation3.png">
-    <dimension unit="inches">12.75</dimension>
-    <dimension unit="inches">10.79</dimension>
-</ComparisonItem>
-
-<ComparisonItem name="xBox 360" format="bitmap" src="Pngs/microsoft xbox.png">
-    <dimension unit="inches">12.5</dimension>
-    <dimension unit="inches">10.15</dimension>
-</ComparisonItem>
-
-<ComparisonItem name="James River" format="bitmap">
-    <dimension unit="miles">348</dimension>
+<ComparisonItem name="Virginia" format="bitmap">
+    <dimension name="width" unit="miles">430</dimension>
+    <dimension name="height" unit="miles">200</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Chesapeake Bay" format="bitmap">
-    <dimension unit="miles">195</dimension>
-    <dimension unit="miles">30</dimension>
+    <dimension name="height" unit="miles">195</dimension>
+    <dimension name="width" unit="miles">30</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Virginia" format="bitmap">
-    <dimension unit="miles">430</dimension>
-    <dimension unit="miles">200</dimension>
+<ComparisonItem name="James River" format="bitmap">
+    <dimension name="length" unit="miles">348</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="Henrico County" format="vector" src="HenricoCounty">
+    <dimension name="width" unit="miles">13</dimension>
+    <dimension name="height" unit="miles">5.85</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Richmond" format="bitmap">
-    <dimension unit="miles">4.22</dimension>
-    <dimension unit="miles">2.275</dimension>
+    <dimension name="width" unit="miles">4.22</dimension>
+    <dimension name="height" unit="miles">2.275</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Henrico County" format="bitmap">
-    <dimension unit="miles">13</dimension>
-    <dimension unit="miles">5.85</dimension>
+<ComparisonItem name="City Block" format="vector" src="City_Block">
+    <dimension name="height" unit="ft">260</dimension>
+    <dimension name="width" unit="ft">260</dimension>
+	<dimension name="area" unit="ft2">67600</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="City Block" format="bitmap">
-    <dimension unit="ft">260</dimension>
-    <dimension unit="ft">260</dimension>
+<ComparisonItem name="Classroom" format="bitmap">
+    <dimension name="width" unit="ft">32</dimension>
+    <dimension name="height" unit="ft">25</dimension>
+	<dimension name="area" unit="ft2">800</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Tractor Trailer" format="bitmap" src="Pngs/TractorTrailer.png">
-    <dimension unit="ft">68</dimension>
+<ComparisonItem name="Tractor Trailer" format="vector" src="TractorTrailer">
+    <dimension name="length" unit="ft">68</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Car" format="bitmap" src="Pngs/M5.png">
-    <dimension unit="ft">13.5</dimension>
+<ComparisonItem name="Car" format="vector" src="Car">
+    <dimension name="length" unit="ft">13.5</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Paperclip" format="bitmap" src="Pngs/paperclip.png">
-    <dimension unit="inches">1.5</dimension>
+<ComparisonItem name="8th grade girl" format="vector" src="Woman">
+    <dimension name="height" unit="inches">61.5</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="TV" format="bitmap" src="Pngs/samsung32.png">
-    <dimension unit="inches">30.5</dimension>
-    <dimension unit="inches">21</dimension>
+<ComparisonItem name="8th grade boy" format="vector" src="Man">
+    <dimension name="height" unit="inches">60</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Laptop" format="bitmap" src="Pngs/macbookpro.png">
-    <dimension unit="inches">14.6</dimension>
-    <dimension unit="inches">9.6</dimension>
+<ComparisonItem name="TV" format="vector" src="TV">
+    <dimension name="height" unit="inches">30.5</dimension>
+    <dimension name="width" unit="inches">21</dimension>
+	<dimension name="area" unit="inches2">640.5</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="iPhone" format="bitmap" src="Pngs/iphone4s.png">
-    <dimension unit="inches">4.5</dimension>
-    <dimension unit="inches">2.25</dimension>
+<ComparisonItem name="Microwave" format="vector" src="Microwave">
+    <dimension name="width" unit="inches">19</dimension>
+    <dimension name="height" unit="inches">10</dimension>
+	<dimension name="area" unit="inches2">190</dimension>
 </ComparisonItem>
+
+<ComparisonItem name="Laptop" format="vector" src="UseThis_Laptop">
+    <dimension name="height" unit="inches">9.7</dimension>
+    <dimension name="width" unit="inches">14.72</dimension>
+	<dimension name="area" unit="inches2">142.78</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="Playstation 3" format="vector" src="Playstation3">
+    <dimension name="width" unit="inches">12.75</dimension>
+    <dimension name="height" unit="inches">10.79</dimension>
+	<dimension name="area" unit="area">137.57</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="xBox 360" format="bitmap" src="Pngs/microsoft xbox.png">
+    <dimension name="width" unit="inches">12.5</dimension>
+    <dimension name="height" unit="inches">10.15</dimension>
+	<dimension name="area" unit="inches2">126.87</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="Notebook" format="vector" src="Notebook">
+    <dimension name="width" unit="inches">8.5</dimension>
+    <dimension name="height" unit="inches">11</dimension>
+	<dimension name="area" unit="inches2">93.5</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="Remote Controller" format="vector" src="controller">
+    <dimension name="height" unit="inches">8.5</dimension>
+    <dimension name="width" unit="inches">2.25</dimension>
+	<dimension name="area" unit="inches2">19.125</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="iPhone" format="vector" src="iPhone">
+    <dimension name="height" unit="inches">4.5</dimension>
+    <dimension name="width" unit="inches">2.25</dimension>
+	<dimension name="area" unit="inches2">10.125</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="Paperclip" format="vector" src="paperclip">
+    <dimension name="length" unit="inches">1.5</dimension>
+</ComparisonItem>
+
 </ComparisonItems>

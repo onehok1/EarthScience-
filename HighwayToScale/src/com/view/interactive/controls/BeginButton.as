@@ -13,7 +13,7 @@ package com.view.interactive.controls
 		
 		protected override function onMouseUpHandler(e:MouseEvent):void {
 			super.onMouseUpHandler(e);
-			dispatchEvent(new ViewEvent("Comparison_View_1"));
+			dispatchEvent(new ViewEvent("Comparison_View"));
 		}
 		
 	}
