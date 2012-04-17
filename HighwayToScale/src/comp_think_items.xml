@@ -117,6 +117,10 @@
 	<dimension name="area" unit="ft2">67600</dimension>
 </ComparisonItem>
 
+<ComparisonItem name="Average American House" format="vector" src="AverageHouse">
+	<dimension name="area" unit="ft2">2392</dimension>
+</ComparisonItem>
+
 <ComparisonItem name="Classroom" format="vector" src="Classroom">
     <dimension name="width" unit="ft">32</dimension>
     <dimension name="height" unit="ft">25</dimension>
