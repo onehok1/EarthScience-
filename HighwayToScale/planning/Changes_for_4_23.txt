@@ -1,0 +1,7 @@
+-some of the ratios that get generated cause the numbers to overlap the text
+-apparently our visualization sucks
+-You can overshoot what you're looking for in the Area/Width/Selection box (replace with dropdown?)
+-we need to get some of the dimensions right (cite sources?)
+-height/length/width problem ----> which one? (this is a language ambiguity problem. One solution might be to assign length to the largest dimension)
+-we could tile images over time, but this is a great deal of work
+-alternatively, we could display the images as they were in the side-by-side view, then tween the smaller image to its relative size and position over top of the larger image. Tweenlite could accomplish this fairly easily

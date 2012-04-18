@@ -30,7 +30,7 @@ package com.view
 			dp.addItem( { label: "Height", attribute: "height" } );
 			dp.addItem( { label: "Length", attribute: "length" } );		
 			
-			_dimensionList.allowMultipleSelection = false;
+			//_dimensionList.allowMultipleSelection = false;
 			_dimensionList.dataProvider = dp;
 			_dimensionList.addEventListener(Event.CHANGE, onChangeListItemHandler, false, 0, true);
 		}
