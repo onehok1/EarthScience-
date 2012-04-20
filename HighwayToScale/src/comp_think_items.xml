@@ -184,9 +184,9 @@
 	<dimension name="area" unit="inches2">126.87</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="Basketball Diamter" format="vector" src="BasketBall">
-    <dimension unit="in">9.39</dimension>
-    <dimension unit="in">9.39</dimension>
+<ComparisonItem name="Basketball Diameter" format="vector" src="BasketBall">
+    <dimension name="width" unit="in">9.39</dimension>
+    <dimension name="height" unit="in">9.39</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="SoccerBall Diameter" format="vector" src="SoccerBall">
