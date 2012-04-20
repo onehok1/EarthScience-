@@ -80,15 +80,17 @@
 </ComparisonItem>
 
 <ComparisonItem name="United States" format="vector" src="USA">
-    <dimension name="width" unit="miles">2680</dimension>
-    <dimension name="length" unit="miles">2680</dimension>
+    <dimension name="width" unit="miles">3554</dimension>
+    <dimension name="length" unit="miles">3554</dimension>
     <dimension name="height" unit="miles">1582</dimension>
+	<dimension name="area" unit="miles2">3794101</dimension>
 </ComparisonItem>-->
 
 <ComparisonItem name="Virginia" format="vector" src="Virginia">
     <dimension name="width" unit="miles">430</dimension>
-    <dimension name="length" unit="miles">430</dimension>
+	<dimension name="length" unit="miles">430</dimension>
     <dimension name="height" unit="miles">200</dimension>
+	<dimension name="area" unit="miles2">42,769</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Chesapeake Bay" format="vector" src="ChesapeakeBay">
@@ -104,6 +106,7 @@
 <ComparisonItem name="Henrico County" format="vector" src="HenricoCounty">
     <dimension name="width" unit="miles">13</dimension>
     <dimension name="height" unit="miles">5.85</dimension>
+	<dimension name="area" unit="miles2">245</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Richmond" format="vector" src="Richmond">
@@ -129,7 +132,11 @@
 
 <ComparisonItem name="Tractor Trailer" format="vector" src="TractorTrailer">
     <dimension name="length" unit="ft">68</dimension>
-    <dimension name="width" unit="ft">68</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="SchoolBus" format="vector">
+    <dimension name="width" unit="ft">10</dimension>
+    <dimension name="length" unit="ft">36</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Car" format="vector" src="Car">
@@ -137,14 +144,14 @@
     <dimension name="width" unit="ft">13.5</dimension>
 </ComparisonItem>
 
-<ComparisonItem name="8th grade girl" format="vector" src="Woman">
-    <dimension name="height" unit="inches">61.5</dimension>
-    <dimension name="length" unit="inches">61.5</dimension>
-</ComparisonItem>
-
-<ComparisonItem name="8th grade boy" format="vector" src="Man">
+<ComparisonItem name="8th grade student" format="vector" src="Man">
     <dimension name="height" unit="inches">60</dimension>
     <dimension name="length" unit="inches">60</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="Average Dog" format="vector" src="AverageDog">
+    <dimension name="length" unit="in">28</dimension>
+    <dimension name="height" unit="in">23</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="TV" format="vector" src="TV">
@@ -177,10 +184,30 @@
 	<dimension name="area" unit="inches2">126.87</dimension>
 </ComparisonItem>
 
+<ComparisonItem name="Basketball Diamter" format="vector" src="BasketBall">
+    <dimension unit="in">9.39</dimension>
+    <dimension unit="in">9.39</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="SoccerBall Diameter" format="vector" src="SoccerBall">
+    <dimension name="width" unit="in">8.65</dimension>
+    <dimension name="height" unit="in">8.65</dimension>
+</ComparisonItem>
+
 <ComparisonItem name="Notebook" format="vector" src="Notebook">
     <dimension name="width" unit="inches">8.5</dimension>
     <dimension name="height" unit="inches">11</dimension>
 	<dimension name="area" unit="inches2">93.5</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="Softball Diameter" format="vector" src="Softball">
+    <dimension name="width" unit="in">3.8</dimension>
+    <dimension name="height" unit="in">3.8</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="Baseball Diameter" format="vector" src="Baseball">
+    <dimension name="width" unit="in">3</dimension>
+    <dimension name="height" unit="in">3</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Remote Controller" format="vector" src="controller">
@@ -188,6 +215,10 @@
     <dimension name="length" unit="inches">8.5</dimension>
     <dimension name="width" unit="inches">2.25</dimension>
 	<dimension name="area" unit="inches2">19.125</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="UnsharpenedPencil" format="vector" src="UnsharpenedPencil">
+    <dimension name="length" unit="in">8</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="iPhone" format="vector" src="iPhone">
