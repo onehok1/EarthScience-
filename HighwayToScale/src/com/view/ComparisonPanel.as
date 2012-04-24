@@ -82,7 +82,7 @@ package com.view
 		protected function setTextFields():void {
 			item_txt.text = item_panel.selectedItem.label;
 			dimension_txt.text = item_panel.selectedItem.compItem.dimension[Controller.comparisonDTO.comparisonDimension];
-			unit_txt.text = item_panel.selectedItem.compItem.unit;
+			unit_txt.text = item_panel.selectedItem.compItem.unit[Controller.comparisonDTO.comparisonDimension];
 		}
 		
 		protected function onChangeListItemHandler(e:Event):void {			

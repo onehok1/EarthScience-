@@ -8,6 +8,17 @@ package com.model
 	 */
 	public class Comparison
 	{
+		private const INCHES_IN_METER:Number = 39.3700787;
+		private const FEET_IN_METER:Number = 3.2808399;
+		private const INCHES_IN_FEET:Number = 12;
+		private const FEET_IN_MILES:Number = 5280;
+		private const KILOMETERS_IN_MILES:Number = 1.6093440006146921597227828997904;
+		private const SQUARE_KILOMETERS_IN_SQUARE_MILES:Number = 2.58998811;
+		private const SQUARE_METERS_IN_SQUARE_KILOMETERS:Number = 1000000;
+		private const SQUARE_FEET_IN_SQUARE_METER:Number = 10.7639104;
+		private const SQUARE_INCHES_IN_SQUARE_FEET:Number = 144;
+		private const METERS_IN_KILOMETERS:Number = 1000;
+		
 		private var _comparisonItemA:ComparisonItem;
 		private var _comparisonItemB:ComparisonItem;
 		private var _comparisonDimension:String = "area";
@@ -24,13 +35,6 @@ package com.model
 			miles:8,
 			miles2:9
 		};
-		
-		private const INCHES_IN_METER:Number = 39.3700787;
-		private const FEET_IN_METER:Number = 3.2808399;
-		private const INCHES_IN_FEET:Number = 12;
-		private const FEET_IN_MILES:Number = 5280;
-		private const KILOMETERS_IN_MILES:Number = 1.6093440006146921597227828997904;
-		private const METERS_IN_KILOMETERS:Number = 1000;
 		
 		public function Comparison() {
 		}
@@ -89,33 +93,30 @@ package com.model
 		}
 		
 		protected function getLargerUnit():String {
-			if (_unitValues[_comparisonItemA.unit] > _unitValues[_comparisonItemB.unit]) {
-				return _comparisonItemA.unit;
+			if (_unitValues[_comparisonItemA.unit[_comparisonDimension]] > _unitValues[_comparisonItemB.unit[_comparisonDimension]]) {
+				return _comparisonItemA.unit[_comparisonDimension];
 			}
 			else {
-				return _comparisonItemB.unit;
+				return _comparisonItemB.unit[_comparisonDimension];
 			}
 		}
 		
 		protected function getSmallerUnit():String {
-			var aUnit:Number = _unitValues[_comparisonItemA.unit];
-			var bUnit:Number = _unitValues[_comparisonItemB.unit];
+			var aUnit:Number = _unitValues[_comparisonItemA.unit[_comparisonDimension]];
+			var bUnit:Number = _unitValues[_comparisonItemB.unit[_comparisonDimension]];
 			if (aUnit > bUnit) {
-				return _comparisonItemB.unit;
+				return _comparisonItemB.unit[_comparisonDimension];
 			}
 			else {
-				return _comparisonItemA.unit;
+				return _comparisonItemA.unit[_comparisonDimension];
 			}
 		}
 		
 		protected function convertKilometers(targetUnit:String, comparator:ComparisonItem):Number {
-			var dimension:Number = comparator.dimension[comparisonDimension];
+			var dimension:Number = comparator.dimension[_comparisonDimension];
 			
 			switch(targetUnit) {
 				case "km":
-					return dimension;
-					break;
-				case "km2":
 					return dimension;
 					break;
 				default:
@@ -125,13 +126,24 @@ package com.model
 			
 		}
 		
+		protected function convertSquareKilometers(targetUnit:String, comparator:ComparisonItem):Number {
+			var dimension:Number = comparator.dimension[_comparisonDimension];
+			
+			switch(targetUnit) {
+				case "km2":
+					return dimension;
+					break;
+				default:
+					return convertSquareMeters(targetUnit, comparator) * SQUARE_METERS_IN_SQUARE_KILOMETERS;
+					break;
+			}
+			
+		}
+		
 		protected function convertMiles(targetUnit:String, comparator:ComparisonItem):Number {
 			switch(targetUnit) {
 				case "miles":
-					return comparator.dimension[comparisonDimension];
-					break;
-				case "miles2":
-					return comparator.dimension[comparisonDimension];
+					return comparator.dimension[_comparisonDimension];
 					break;
 				default:
 					return convertKilometers(targetUnit, comparator) * KILOMETERS_IN_MILES;
@@ -140,13 +152,22 @@ package com.model
 			
 		}
 		
+		protected function convertSquareMiles(targetUnit:String, comparator:ComparisonItem):Number {
+			switch(targetUnit) {
+				case "miles2":
+					return comparator.dimension[_comparisonDimension];
+					break;
+				default:
+					return convertSquareKilometers(targetUnit, comparator) * SQUARE_KILOMETERS_IN_SQUARE_MILES;
+					break;
+			}
+			
+		}
+		
 		protected function convertMeters(targetUnit:String, comparator:ComparisonItem):Number {
 			switch(targetUnit) {
 				case "m":
-					return comparator.dimension[comparisonDimension];
-					break;
-				case "m2":
-					return comparator.dimension[comparisonDimension];
+					return comparator.dimension[_comparisonDimension];
 					break;
 				default:
 					return convertFeet(targetUnit, comparator) * FEET_IN_METER;
@@ -154,35 +175,101 @@ package com.model
 			}
 		}
 		
-		protected function convertFeet(targetUnit:String, comparator:ComparisonItem):Number {
-			
+		protected function convertSquareMeters(targetUnit:String, comparator:ComparisonItem):Number {
+			switch(targetUnit) {
+				case "m2":
+					return comparator.dimension[_comparisonDimension];
+					break;
+				default:
+					return convertSquareFeet(targetUnit, comparator) * SQUARE_FEET_IN_SQUARE_METER;
+					break;
+			}
+		}
+		
+		protected function convertSquareFeet(targetUnit:String, comparator:ComparisonItem):Number {			
+			switch(targetUnit) {
+				case "ft2":
+					return comparator.dimension[_comparisonDimension];
+					break;
+				case "inches2":
+					return comparator.dimension[_comparisonDimension] * SQUARE_INCHES_IN_SQUARE_FEET;
+					break;
+				default:
+					return 0;
+					break;
+			}	
+		}
+		
+		protected function convertFeet(targetUnit:String, comparator:ComparisonItem):Number {			
 			switch(targetUnit) {
 				case "ft":
-					return comparator.dimension[comparisonDimension];
-					break;
-				case "ft2":
 					return comparator.dimension[comparisonDimension];
 					break;
 				case "inches":
 					return comparator.dimension[comparisonDimension] * INCHES_IN_FEET;
 					break;
-				case "inches2":
-					return comparator.dimension[comparisonDimension] * INCHES_IN_FEET;
-					break;
 				default:
 					return 0;
 					break;
-			}
-			
+			}			
 		}
 		
 		private function convertItem(targetUnit:String, comparisonItem:ComparisonItem):void {
-			if (comparisonItem.unit == "miles" || comparisonItem.unit == "miles2") 
+			var unit:String = comparisonItem.unit[_comparisonDimension];
+			
+			
+			if (unit == "miles") {
 				comparisonItem.dimension[comparisonDimension] = convertMiles(targetUnit, comparisonItem);
-			else if (comparisonItem.unit == "km" || comparisonItem.unit == "km2")
+			}
+			else if (unit == "miles2") {
+				comparisonItem.dimension[comparisonDimension] = convertSquareMiles(targetUnit, comparisonItem);
+			}
+			else if (unit == "km") {
 				comparisonItem.dimension[comparisonDimension] = convertKilometers(targetUnit, comparisonItem);
-			else if (comparisonItem.unit == "m" || comparisonItem.unit == "m2") comparisonItem.dimension[comparisonDimension] = convertMeters(targetUnit, comparisonItem);
-			else if (comparisonItem.unit == "ft" || comparisonItem.unit == "ft2") comparisonItem.dimension[comparisonDimension] = convertFeet(targetUnit, comparisonItem);
-		}		
+			}
+			else if (unit == "km2") {
+				comparisonItem.dimension[comparisonDimension] = convertSquareKilometers(targetUnit, comparisonItem);
+			}
+			else if (unit == "m") {
+				comparisonItem.dimension[comparisonDimension] = convertMeters(targetUnit, comparisonItem);
+			}
+			else if (unit == "m2") {
+				comparisonItem.dimension[comparisonDimension] = convertSquareMeters(targetUnit, comparisonItem);
+			}
+			else if (unit == "ft") {
+				comparisonItem.dimension[comparisonDimension] = convertFeet(targetUnit, comparisonItem);
+			}
+			else if (unit == "ft2") {
+				comparisonItem.dimension[comparisonDimension] = convertSquareFeet(targetUnit, comparisonItem);
+			}
+			/*switch(comparisonItem.unit[_comparisonDimension]) {
+				case "miles":
+					comparisonItem.dimension[comparisonDimension] = convertMiles(targetUnit, comparisonItem);
+					break;
+				case "miles2":
+					comparisonItem.dimension[comparisonDimension] = convertSquareMiles(targetUnit, comparisonItem);
+					break;
+				case "km":
+					comparisonItem.dimension[comparisonDimension] = convertKilometers(targetUnit, comparisonItem);
+					break;
+				case "km2":
+					comparisonItem.dimension[comparisonDimension] = convertSquareKilometers(targetUnit, comparisonItem);
+					break;
+				case "m":
+					comparisonItem.dimension[comparisonDimension] = convertMeters(targetUnit, comparisonItem);
+					break;
+				case "m2":
+					comparisonItem.dimension[comparisonDimension] = convertSquareMeters(targetUnit, comparisonItem);
+					break;
+				case "ft":
+					comparisonItem.dimension[comparisonDimension] = convertFeet(targetUnit, comparisonItem);
+					break;
+				case "ft2":
+					comparisonItem.dimension[comparisonDimension] = convertSquareFeet(targetUnit, comparisonItem);
+					break;
+				default:
+					break;
+			}	*/								
+		}				
 	}
 }

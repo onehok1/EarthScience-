@@ -17,9 +17,7 @@
     <dimension name="area" dimensions="2" unit="km2">5447000</dimension>
 </ComparisonItem>-->
 
-<ComparisonItem name="Pacific Plate" format="vector" src="PacificPlate">
-    <dimension name="area" unit="km2">103280000</dimension>
-</ComparisonItem>
+
 
 <!--<ComparisonItem name="North American Plate" format="bitmap" src="Pngs/north_american_plate.png">
     <dimension name="area" dimensions="2" unit="km2">75888000</dimension>
@@ -61,16 +59,28 @@
     <dimension name="area" dimensions="2" unit="km2">60916000</dimension>
 </ComparisonItem>-->
 
-<ComparisonItem name="African Plate" format="vector" src="AfricanPlate">
-    <dimension name="area" unit="km2">61334000</dimension>
-</ComparisonItem>
+
 
 <ComparisonItem name="Earth Area" format="vector" src="Earth_Round">
     <dimension name="area" unit="miles2">197000000</dimension>
 </ComparisonItem>
 
+<ComparisonItem name="Pacific Plate" format="vector" src="PacificPlate">
+    <dimension name="area" unit="km2">103280000</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="African Plate" format="vector" src="AfricanPlate">
+    <dimension name="area" unit="km2">61334000</dimension>
+</ComparisonItem>
+
 <ComparisonItem name="Earth Circumference" format="vector" src="Earth_Flat">
     <dimension name="length" unit="miles">24901.55</dimension>
+</ComparisonItem>
+
+<ComparisonItem name="Earth Diameter" format="vector" src="Earth_Round">
+	<dimension name="width" unit="km">12742</dimension>
+	<dimension name="height" unit="km">12742</dimension>
+	<dimension name="diameter" unit="km">12742</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Canada" format="vector" src="Canada">
@@ -97,6 +107,7 @@
     <dimension name="height" unit="miles">195</dimension>
     <dimension name="length" unit="miles">195</dimension>
     <dimension name="width" unit="miles">30</dimension>
+    <dimension name="area" unit="miles2">4479</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="James River" format="vector" src="JamesRiver">
@@ -112,6 +123,7 @@
 <ComparisonItem name="Richmond" format="vector" src="Richmond">
     <dimension name="width" unit="miles">4.22</dimension>
     <dimension name="height" unit="miles">2.275</dimension>
+    <dimension name="area" unit="miles2">63</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="City Block" format="vector" src="City_Block">
@@ -150,8 +162,8 @@
 </ComparisonItem>
 
 <ComparisonItem name="Average Dog" format="vector" src="AverageDog">
-    <dimension name="length" unit="in">28</dimension>
-    <dimension name="height" unit="in">23</dimension>
+    <dimension name="length" unit="inches">28</dimension>
+    <dimension name="height" unit="inches">23</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="TV" format="vector" src="TV">
@@ -185,13 +197,15 @@
 </ComparisonItem>
 
 <ComparisonItem name="Basketball Diameter" format="vector" src="BasketBall">
-    <dimension name="width" unit="in">9.39</dimension>
-    <dimension name="height" unit="in">9.39</dimension>
+    <dimension name="diameter" unit="inches">9.39</dimension>
+    <dimension name="width" unit="inches">9.39</dimension>
+    <dimension name="height" unit="inches">9.39</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="SoccerBall Diameter" format="vector" src="SoccerBall">
-    <dimension name="width" unit="in">8.65</dimension>
-    <dimension name="height" unit="in">8.65</dimension>
+    <dimension name="diameter" unit="inches">8.65</dimension>
+    <dimension name="width" unit="inches">8.65</dimension>
+    <dimension name="height" unit="inches">8.65</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Notebook" format="vector" src="Notebook">
@@ -201,13 +215,15 @@
 </ComparisonItem>
 
 <ComparisonItem name="Softball Diameter" format="vector" src="Softball">
-    <dimension name="width" unit="in">3.8</dimension>
-    <dimension name="height" unit="in">3.8</dimension>
+    <dimension name="diameter" unit="inches">3.8</dimension>
+    <dimension name="width" unit="inches">3.8</dimension>
+    <dimension name="height" unit="inches">3.8</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Baseball Diameter" format="vector" src="Baseball">
-    <dimension name="width" unit="in">3</dimension>
-    <dimension name="height" unit="in">3</dimension>
+    <dimension name="diameter" unit="inches">3</dimension>
+    <dimension name="width" unit="inches">3</dimension>
+    <dimension name="height" unit="inches">3</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="Remote Controller" format="vector" src="controller">
@@ -218,7 +234,7 @@
 </ComparisonItem>
 
 <ComparisonItem name="UnsharpenedPencil" format="vector" src="UnsharpenedPencil">
-    <dimension name="length" unit="in">8</dimension>
+    <dimension name="length" unit="inches">8</dimension>
 </ComparisonItem>
 
 <ComparisonItem name="iPhone" format="vector" src="iPhone">

@@ -48,10 +48,11 @@ package com.model
 			comparisonItem.name = xmlNode.@name;
 			comparisonItem.source = xmlNode.@src;
 			comparisonItem.format = xmlNode.@format;
-			comparisonItem.unit = xmlNode.dimension[0].@unit;		
+			//comparisonItem.unit = xmlNode.dimension[0].@unit;		
 			
 			for each(var dimensionValue:XML in xmlNode.children()) {
 				comparisonItem.dimension[dimensionValue.@name] = (Number(dimensionValue.text()));
+				comparisonItem.unit[dimensionValue.@name] = dimensionValue.@unit;
 			}
 			
 			return comparisonItem;

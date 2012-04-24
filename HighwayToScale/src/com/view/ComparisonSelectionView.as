@@ -29,8 +29,8 @@ package com.view
 			dp.addItem( { label: "Width", attribute: "width" } );
 			dp.addItem( { label: "Height", attribute: "height" } );
 			dp.addItem( { label: "Length", attribute: "length" } );		
+			dp.addItem( { label: "Diameter", attribute: "diameter" } );		
 			
-			//_dimensionList.allowMultipleSelection = false;
 			_dimensionList.dataProvider = dp;
 			_dimensionList.addEventListener(Event.CHANGE, onChangeListItemHandler, false, 0, true);
 		}

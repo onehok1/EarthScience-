@@ -8,7 +8,7 @@ package com.model
 	{
 		private var _name:String = "";
 		private var _dimension:Object = {};
-		private var _unit:String = "";
+		private var _unit:Object = {};
 		private var _location:String = "";
 		private var _format:String = "";
 		
@@ -25,11 +25,11 @@ package com.model
 			_name = newName;
 		}
 		
-		public function set unit(newUnit:String):void {
+		public function set unit(newUnit:Object):void {
 			_unit = newUnit;
 		}
 		
-		public function get unit():String {
+		public function get unit():Object {
 			return _unit;
 		}
 		

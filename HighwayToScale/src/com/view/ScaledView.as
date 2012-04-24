@@ -1,7 +1,8 @@
 package com.view 
 {
 	/**
-	 * ...
+	 * This class controls the content of the Scaled View in the application. This is the screen that appears after two objects
+	 * have been selected for comparison and displays their relative size.
 	 * @author Brandon Dockery
 	 */
 	
@@ -14,6 +15,7 @@ package com.view
 	import flash.geom.Point;
 	import flash.net.URLRequest;
 	import flash.utils.*;
+	import com.events.ReplayEvent;
 	
 	
 	public class ScaledView extends View
@@ -36,6 +38,8 @@ package com.view
 			setSmallerImage();
 			setLargerImage();
 			
+			this.addEventListener(ReplayEvent.REPLAY, onReplayClickHandler, false, 0, true);
+			
 		}
 		
 		public override function disable():void {
@@ -51,6 +55,7 @@ package com.view
 		protected function removeEventListeners():void {
 			if(_smallLoader) _smallLoader.contentLoaderInfo.removeEventListener(Event.COMPLETE, onLoadSmallImageCompleteHandler, false);
 			if (_bigLoader)_bigLoader.contentLoaderInfo.removeEventListener(Event.COMPLETE, onLoadBigImageCompleteHandler, false);
+			removeEventListener(ReplayEvent.REPLAY, onReplayClickHandler, false);
 		}
 		
 		protected function nullifyLoaders():void {
@@ -85,6 +90,9 @@ package com.view
 					dimension_txt.text = "tall";
 					break;
 				case "length":
+					dimension_txt.text = "long";
+					break;
+				case "diameter":
 					dimension_txt.text = "long";
 					break;
 				default:
@@ -137,6 +145,11 @@ package com.view
 			scaleImages();
 		}
 		
+		protected function onReplayClickHandler(e:ReplayEvent):void {
+			resetSmallerMovieClip();
+			scaleArea();
+		}
+		
 		protected function scaleImages():void {
 			switch(Controller.comparisonDTO.comparisonDimension) {
 				case "area":
@@ -151,6 +164,9 @@ package com.view
 				case "length":
 					scaleWidth();
 					break;
+				case "diameter":
+					scaleWidth();
+					break;
 				default:
 					scaleArea();
 					break;
@@ -158,7 +174,7 @@ package com.view
 		}
 		
 		protected function scaleArea():void {
-			TweenLite.to(image_smaller_mc, 2, { x: image_larger_mc.x, y: image_larger_mc.y, width: image_larger_mc.getChildAt(0).width / Controller.comparisonDTO.getRoundedRatio(), height: image_larger_mc.getChildAt(0).height / Math.sqrt(Controller.comparisonDTO.getRoundedRatio()), delay:2 }); 
+			TweenLite.to(image_smaller_mc, 2, { x: image_larger_mc.x, y: image_larger_mc.y, width: image_larger_mc.getChildAt(0).width / Math.sqrt(Controller.comparisonDTO.getRoundedRatio()), height: image_larger_mc.getChildAt(0).height / Math.sqrt(Controller.comparisonDTO.getRoundedRatio()), delay:2 }); 
 		}
 	
 		protected function scaleWidth():void {

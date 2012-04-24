@@ -1,0 +1,20 @@
+- Nate's students though that the version we showed them was sort of plain, but the graphics are better now.
+- He likes the list of objects we have in there now.
+- Likes the side-by-side comparison and the animation
+- **Our UI is very plain. We should fix that.
+- They like the idea of tiling better
+- The difference between some objects that causes smaller ones to disappear is still bothersome. We should come up with some solution to this.
+- replace 8th grade boy & girl with "8th grade student" ----> kids are immature, when one shows up on top of the other
+- we still need to add in the items from Lauren's email, those were from Sarah's student feedback
+- Lesson Plan
+	- 45 minute chunk, not a full period for what we've got so far in Lauren's plan
+	- So it looks like the lesson plan stuff is in order. Lauren will most likely be the only one going.
+	- Rotate Chesapeake Bay to be longer up and down
+	- Henrico County size is not 13 miles across, our measurement is wrong
+		- In fact, we should double-check all of our measurements
+	
+- We're still struggling with what dimensions to use and how to classify them
+	- one option is to use the longest dimension as "length" and still have the others floating out there in their respective categories
+	- one option is to have them select an object, then choose which dimension they want to compare on
+		-this option is probably the best, and the teachers like it the best, but it means the most work for us
+		-and by us I probably mean me
